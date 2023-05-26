@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fragebogen zur Bewertung der Behandlung nach einer Herzoperation</title>
+</head>
+<body>
+    <h1>Fragebogen zur Bewertung der Behandlung nach einer Herzoperation</h1>
+
+    <form action="submit.php" method="post">
+        <h3>1. Geschlecht:</h3>
+        <input type="radio" name="geschlecht" value="Männlich"> Männlich<br>
+        <input type="radio" name="geschlecht" value="Weiblich"> Weiblich<br>
+        <input type="radio" name="geschlecht" value="Andere"> Andere<br>
+
+        <h3>2. Alter:</h3>
+        <select name="alter">
+            <option value="Unter 30">Unter 30</option>
+            <option value="30-45">30-45</option>
+            <option value="45-60">45-60</option>
+            <option value="Über 60">Über 60</option>
+        </select>
+
+        <h3>3. Welche Art von Herzoperation haben Sie erhalten?</h3>
+        <input type="checkbox" name="herzoperation" value="Bypass-Operation"> Bypass-Operation<br>
+        <input type="checkbox" name="herzoperation" value="Herzklappenoperation"> Herzklappenoperation<br>
+        <input type="checkbox" name="herzoperation" value="Herztransplantation"> Herztransplantation<br>
+        <input type="checkbox" name="herzoperation" value="Anderes"> Anderes (bitte angeben):<br>
+        <input type="text" name="anderes_herzoperation">
+
+        <!-- Weitere Fragen hier einfügen -->
+
+        <br>
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+</html>
